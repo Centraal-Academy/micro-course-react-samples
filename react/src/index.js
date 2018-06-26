@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyButton from './react-states'
+import MyButton from './react-materialui'
 
 const appContainer = document.getElementById('app-container')
 
-ReactDOM.render(<MyButton message='i am a button' />, appContainer)
+ReactDOM.render(<MyButton message='Material Button' />, appContainer)
