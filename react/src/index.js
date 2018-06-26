@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyComponent from './react-life-cycle'
+import MyButton from './react-states'
 
 const appContainer = document.getElementById('app-container')
 
-ReactDOM.render(<MyComponent />, appContainer)
+ReactDOM.render(<MyButton message='i am a button' />, appContainer)
