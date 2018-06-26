@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom'
-import myComponent from './react-jsx'
+import myComponent from './react-component-function'
 
 const appContainer = document.getElementById('app-container')
 
