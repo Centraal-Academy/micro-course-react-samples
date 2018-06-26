@@ -1,6 +1,7 @@
+import React from 'react'
 import ReactDOM from 'react-dom'
-import myComponent from './react-component-function'
+import MyComponent from './react-life-cycle'
 
 const appContainer = document.getElementById('app-container')
 
-ReactDOM.render(myComponent, appContainer)
+ReactDOM.render(<MyComponent />, appContainer)
