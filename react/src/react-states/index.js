@@ -1,8 +1,8 @@
 import React from 'react'
 
 export default class ButtonComponent extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
       color: 'theme-green'
     }
