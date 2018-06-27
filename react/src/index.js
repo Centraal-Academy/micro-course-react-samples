@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyButton from './react-conditional-rendering'
+import MyComponent from './react-multiple-items'
 // import 'bootstrap/dist/css/bootstrap.css'
 
 const appContainer = document.getElementById('app-container')
 
-ReactDOM.render(<MyButton message='I have a message' />, appContainer)
+ReactDOM.render(<MyComponent />, appContainer)
