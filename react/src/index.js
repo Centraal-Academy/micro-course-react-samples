@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyButton from './react-default-props'
+import MyButton from './react-prop-types'
 // import 'bootstrap/dist/css/bootstrap.css'
 
 const appContainer = document.getElementById('app-container')
 
-ReactDOM.render(<MyButton />, appContainer)
+ReactDOM.render(<MyButton message={[]} />, appContainer)
