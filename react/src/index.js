@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyButton from './react-events-childrens'
+import MyButton from './react-conditional-rendering'
 // import 'bootstrap/dist/css/bootstrap.css'
 
 const appContainer = document.getElementById('app-container')
