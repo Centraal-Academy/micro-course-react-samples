@@ -15,7 +15,7 @@ export default function () {
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
         <Route exact path='/pokemons' component={Pokemons} />
-        <Route exact path='/pokemons/:id' component={Pokemon} />
+        <Route path='/pokemons/:id' component={Pokemon} />
       </div>
     </BrowserRouter>
   )
