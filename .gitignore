@@ -63,3 +63,6 @@ typings/
 # distribution folder
 dist
 build
+
+# keys
+keys.js
