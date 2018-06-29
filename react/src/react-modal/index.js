@@ -53,7 +53,7 @@ export default class MyModal extends React.Component {
         <header>
           <h1>Modal Sample</h1>
         </header>
-        <div onSubmit={this._handleSubmit}>
+        <div>
           <PortalModal header='Modal title' open={this.state.openModal} onClose={this._closeModal}>
             <h1>I'm a modal</h1>
           </PortalModal>
