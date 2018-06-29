@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
+const keys = require('./keys')
 
 const config = {
   devServer: {
@@ -42,6 +43,7 @@ const config = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: './index.html'
     }),
+    new webpack.DefinePlugin(keys),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
