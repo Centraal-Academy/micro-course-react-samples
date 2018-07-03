@@ -1,17 +1,10 @@
 import React from 'react'
 
-const TitleComponent = class extends React.Component {
-  render () {
-    return React.createElement('h1',
-      null,
-      `${this.props.message}`
-    )
-  }
+function TitleComponent (props) {
+  return React.createElement('h1',
+    null,
+    `${this.props.message || 'Hello World'}`
+  )
 }
 
-const simpleElement = React.createElement(
-  TitleComponent,
-  { message: 'Hello World' }
-)
-
-export default simpleElement
+export default TitleComponent
