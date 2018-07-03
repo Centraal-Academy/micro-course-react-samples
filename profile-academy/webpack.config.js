@@ -1,32 +1,11 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-module.exports = {
-  devServer: {
-    port: 8000,
-    historyApiFallback: true,
-    open: true,
-    watchOptions: {
-      ignored: /node_modules/
-    }
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['react', 'env']
-          }
-        }
-      }
-    ]
-  },
+const merge = require('webpack-merge')
+const common = require('./webpack.common')
+const WebpackBundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
+const config = merge(common, {
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/index.html'),
-      filename: './index.html'
-    })
+    new WebpackBundleAnalyzer()
   ]
-}
+})
+
+module.exports = config
