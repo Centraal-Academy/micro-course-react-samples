@@ -2,6 +2,7 @@ import React from 'react'
 import Page from '../components/Page'
 import Title from '../components/Title'
 import List from '../components/List'
+import Card from '../components/Card'
 
 export default class App extends React.Component {
   constructor (props) {
@@ -36,7 +37,7 @@ export default class App extends React.Component {
   render () {
     return (<Page>
       <Title message='Lista de cursos' />
-      <List onClick={this.handleClick} items={this.state.items} />
+      <List onClick={this.handleClick} items={this.state.items} component={Card} />
     </Page>)
   }
 }

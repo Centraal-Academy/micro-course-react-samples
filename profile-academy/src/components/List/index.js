@@ -6,7 +6,7 @@ function List (props) {
   return (
     props.items && props.items.length
       ? <ul className='List'>
-        {props.items.map(item => <ListItem key={item.id} onClick={props.onClick} item={item} />)}
+        {props.items.map(item => <ListItem key={item.id} onClick={props.onClick} item={item} component={props.component} />)}
       </ul>
       : <span>No hay cursos</span>
   )
