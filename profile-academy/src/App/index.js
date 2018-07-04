@@ -9,12 +9,26 @@ export default class App extends React.Component {
     this.state = {
       items: []
     }
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick (data) {
+    console.log(data)
   }
 
   componentDidMount () {
     setTimeout(() => {
       this.setState({
-        items: ['react', 'diseño de software', 'redux']
+        items: [{
+          id: 1,
+          name: 'react'
+        }, {
+          id: 2,
+          name: 'diseño de software'
+        }, {
+          id: 3,
+          name: 'redux'
+        }]
       })
     }, 3000)
   }
@@ -22,7 +36,7 @@ export default class App extends React.Component {
   render () {
     return (<Page>
       <Title message='Lista de cursos' />
-      <List id='lista' items={this.state.items} />
+      <List onClick={this.handleClick} items={this.state.items} />
     </Page>)
   }
 }
