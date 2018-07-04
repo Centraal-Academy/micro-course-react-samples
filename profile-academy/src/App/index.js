@@ -22,7 +22,7 @@ export default class App extends React.Component {
   render () {
     return (<Page>
       <Title message='Lista de cursos' />
-      <List items={this.state.items} />
+      <List id='lista' items={this.state.items} />
     </Page>)
   }
 }
