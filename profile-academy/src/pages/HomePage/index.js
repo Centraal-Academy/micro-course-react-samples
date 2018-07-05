@@ -4,7 +4,10 @@ import HeroHome from './components/HeroHome'
 class HomePage extends React.Component {
   render () {
     return (
-      <HeroHome />
+      <React.Fragment>
+        <HeroHome />
+        <span>More Stuff</span>
+      </React.Fragment>
     )
   }
 }
