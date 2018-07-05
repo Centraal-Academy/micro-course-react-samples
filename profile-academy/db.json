@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "user": {
+      "id": "621516611",
+      "name": "Joel Humberto Gómez Paredes",
+      "job": "Full Stack JS Developer",
+      "avatar": "https://vignette.wikia.nocookie.net/mario/images/7/79/Mega_Man_SSB.U.png/revision/latest?cb=20131223000524&path-prefix=es"
+    },
+    "courses": [
+      {
+        "id": "1",
+        "description": "React course",
+        "image": "https://cdn-images-1.medium.com/max/512/1*qUlxDdY3T-rDtJ4LhLGkEg.png",
+        "name": "Basic React course",
+        "tags": ["js", "react"]
+      },
+      {
+        "id": "2",
+        "description": "Advanced topic",
+        "image": "https://cdn-images-1.medium.com/max/512/1*qUlxDdY3T-rDtJ4LhLGkEg.png",
+        "name": "React++",
+        "tags": []
+      },
+      {
+        "id": "3",
+        "description": "Software Design using JS",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkCwJS4MvwGsSz7rMf9QdhYGF4S1sEqT2OdUBVLPoHduz00gElg",
+        "name": "Modern JS",
+        "tags": []
+      }
+    ]
+  }
+}
