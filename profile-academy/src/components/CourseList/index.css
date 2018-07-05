@@ -1,0 +1,5 @@
+.Course-List {
+  display: flex;
+  list-style: none;
+  overflow: auto;
+}
