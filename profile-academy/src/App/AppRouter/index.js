@@ -8,7 +8,7 @@ export default function AppRouter (props) {
     <BrowserRouter>
       <React.Fragment>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/profile' component={ProfilePage} />
+        <Route path='/profile' component={ProfilePage} />
       </React.Fragment>
     </BrowserRouter>
   )
