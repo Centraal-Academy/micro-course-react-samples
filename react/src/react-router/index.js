@@ -8,15 +8,21 @@ import Pokemon from './Pokemon'
 export default function () {
   return (
     <BrowserRouter>
-      <div>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/pokemons'>Pokemons</Link>
+      <React.Fragment>
+        <div>
+          <Link to='/'>Home</Link>
+        </div>
+        <div>
+          <Link to='/about'>About</Link>
+        </div>
+        <div>
+          <Link to='/pokemons'>Pokemons</Link>
+        </div>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
         <Route exact path='/pokemons' component={Pokemons} />
         <Route path='/pokemons/:id' component={Pokemon} />
-      </div>
+      </React.Fragment>
     </BrowserRouter>
   )
 }
