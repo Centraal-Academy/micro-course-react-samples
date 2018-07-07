@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sample test with enzyme should have text content Something is missing when prop message dont exist 1`] = `
+<button>
+  Click me!
+</button>
+`;
