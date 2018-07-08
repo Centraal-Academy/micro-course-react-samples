@@ -3,7 +3,6 @@ import React from 'react'
 import Container from '../../components/Container'
 import UserBoard from './components/UserBoard'
 import CourseList from '../../components/CourseList'
-import AppContext from '../../App/AppContext'
 
 class ProfilePage extends React.Component {
   constructor (props) {
@@ -28,9 +27,7 @@ class ProfilePage extends React.Component {
   render () {
     return (
       <Container>
-        <AppContext.Consumer>
-          { (data) => <UserBoard {...this.state.user} {...data} /> }
-        </AppContext.Consumer>
+        <UserBoard {...this.state.user} /> }
         <CourseList title='Cursos aprobados' courses={this.state.courses} />
       </Container>
     )
