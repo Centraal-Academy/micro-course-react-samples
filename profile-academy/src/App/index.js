@@ -30,7 +30,7 @@ export default class App extends React.Component {
 
   render () {
     return (
-      <AppContext.Provider value={{ auth: this.state.auth }} >
+      <AppContext.Provider value={this.state} >
         <Page>
           <AppRouter />
         </Page>
