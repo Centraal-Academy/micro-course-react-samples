@@ -3,8 +3,11 @@ import Context, { theme } from './app-context'
 import FatherComponent from './father-component'
 export default function () {
   return (
-    <Context.Provider value={theme}>
+    <React.Fragment>
+      <Context.Provider value={theme}>
+        <FatherComponent />
+      </Context.Provider>
       <FatherComponent />
-    </Context.Provider>
+    </React.Fragment>
   )
 }
